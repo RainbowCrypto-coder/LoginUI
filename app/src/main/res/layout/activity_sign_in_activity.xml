@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signIn_activity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-218dp"
+        android:src="@drawable/signin_img"
+        android:id="@+id/signIn_img"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_signin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/txt_signin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order your favorite food directly from our app!"
+            android:layout_below="@+id/txt_signin"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="18dp"
+            android:id="@+id/txt"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_below="@id/txt"
+            android:textSize="26dp"
+            android:hint="E-mail"
+            android:id="@+id/txt_name"
+            android:background="@drawable/txt_bg"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:textSize="26dp"
+            android:hint="Password"
+            android:layout_marginHorizontal="30dp"
+            android:id="@+id/txt_mail"
+            android:background="@drawable/txt_bg"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="60dp"
+            android:layout_height="wrap_content"
+            android:text="Sign-in"
+            android:layout_below="@+id/txt_mail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"
+            android:backgroundTint="#F2994A"
+            app:cornerRadius="20dp"
+            android:id="@+id/signin_btn"
+            android:onClick="signin_btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In with Google"
+            android:drawableRight="@drawable/google_img"
+            android:textSize="16dp"
+            android:layout_below="@+id/signin_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
